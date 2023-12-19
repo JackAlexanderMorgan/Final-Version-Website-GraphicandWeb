@@ -1,14 +1,12 @@
 html {
     scroll-behavior: smooth;
   }
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 header {
     font-family: 'Bebas Neue', sans-serif;
     font-size:x-large;
@@ -17,30 +15,21 @@ header {
     text-align: center;
     padding: 10px;
 }
-
 #name{
     font-family: 'Pacifico', cursive;
     font-size: 50pt;
     margin:0;
-    /* text-underline-offset:40px;
-    text-decoration-line: underline;
-    text-decoration-style:dashed;
-    text-decoration-color: rgb(255, 140, 249); */
 }
-
 h1 {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 1px;
 }
-
 h2 {
     font-family: 'Bebas Neue', sans-serif;
     text-underline-offset:8px;
     text-decoration-line: underline;
     text-decoration-style:wavy;
-
 }
-
 nav {
     display: flex;
     justify-content: space-around;
@@ -48,10 +37,8 @@ nav {
     padding: 10px;
     position: sticky;
     top: 0px;
-    z-index: 999;
-    
+    z-index: 999; 
 }
-
 nav button, footer button, #coding button {
     font-family: 'Bebas Neue', sans-serif;
     background: #000000;
@@ -60,9 +47,7 @@ nav button, footer button, #coding button {
     cursor: pointer;
     font-size: 20px;
     padding: 5px 10px;
-    
 }
-
 nav button:hover, footer button:hover, #coding button:hover{
     background-color: rgb(255, 140, 249);
     color: #000000;
@@ -72,13 +57,11 @@ nav button:active, footer button:active, #coding button:active {
     color: #000000;
     box-shadow: 4px 4px rgb(255, 140, 249);
 }
-
 section {
     padding: 5px;
     text-align: center;
     margin-top: 10px; 
 }
-
 #typographic, #reflective{
     border-bottom: #000000;
     border-bottom-width: 3px;
@@ -95,20 +78,18 @@ section {
     border-bottom-width: 0px;
     border-bottom-left-radius: 0%;
     border-bottom-right-radius: 0%;
+    padding-bottom: 30px;
 }
-
 .collection {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
 .collection img {
     max-width: 100%;
     height: auto;
     cursor: pointer;
 }
-
 .collection img:hover {
     transform: scale(1.2);
     transition: 0.4s;
@@ -128,15 +109,19 @@ section {
     min-width: 200px;
     max-width: 40%;
 }
-
 .image-description {
     margin-top: 10px;
+    text-align: justify;
 }
-
 .reflective-content {
     margin-top: 20px;
+    align-items: center;
 }
-
+.reflect {
+    margin-left: 12%;
+    margin-right: 12%;
+    text-align: justify;
+}
 footer {
     background-color: #000000;
     color: #ffffff;
@@ -146,26 +131,22 @@ footer {
     border-top-width: 5px;
     border-top-style:solid;
 }
-
-
 /* MOBILE VIEW*/
 /*Uses a media querey to check if viewport =<768px, then if true - change the order of navgation and make 
 elements display in a single column */
-@media (max-width: 768px) {
+@media (max-width: 778px) {
     body {
         display: flex;
         flex-direction: column;
         height: 100vh;
     }
-
     nav {
         order: -1;
     }
-
     section {
         flex: 1;
     }
-    .image-container {
+    .collection-item {
     margin: 10px;
     max-width: 100%;
     }
